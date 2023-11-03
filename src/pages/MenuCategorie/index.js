@@ -17,9 +17,9 @@ export default function MenuCategorie(props) {
     const classification = props.route.params;
     const navigation = useNavigation();
 
-    const product_list = data[classification.name];
-
-    // console.log(classification.name);
+    const class_name = classification.name.replace(' ', '_')
+    
+    const product_list = data[class_name];
 
     return (
         <Box safeArea>

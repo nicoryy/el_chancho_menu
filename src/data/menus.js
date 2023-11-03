@@ -28,7 +28,7 @@ export const data = {
       price:17
     }
   ],
-   DRINKS_ALCOOLICOS: [
+   DRINKS_ALCOÓLICOS: [
     {
       id: 1,
       name: 'CAPIRINHA 2 LIMÕES',
@@ -93,7 +93,7 @@ export const data = {
       price: 23.9
     },
   ],
-    COMBO_PROMOCIONAIS:[
+    COMBOS_PROMOCIONAIS:[
     {
       id: 1,
       name: 'COMBO CHEESEBACON',
