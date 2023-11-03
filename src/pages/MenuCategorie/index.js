@@ -14,10 +14,12 @@ import { data } from "../../data/menus";
 import Product from "../../components/Product";
 
 export default function MenuCategorie(props) {
-    const item = props.route.params;
+    const classification = props.route.params;
     const navigation = useNavigation();
 
-    const product_list = data[item.name];
+    const product_list = data[classification.name];
+
+    // console.log(classification.name);
 
     return (
         <Box safeArea>
@@ -40,16 +42,16 @@ export default function MenuCategorie(props) {
                     />
                 </Pressable>
                 <Heading color={"white"} size={"md"}>
-                    {item.name}
+                    {classification.name}
                 </Heading>
             </Box>
 
             <Box>
                 <FlatList
-                    // marginBottom={180}
+                    marginBottom={180}
                     keyExtractor={(item, index) => item.id}
                     data={product_list}
-                    renderItem={({ item }) => <Product data={item} />}
+                    renderItem={({ item }) => <Product data={item} classification={classification}/>}
                     showsVerticalScrollIndicator={false}
                 />
             </Box>

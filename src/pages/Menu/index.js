@@ -65,7 +65,7 @@ export default function Menu({ navigation }) {
                 <Heading marginBottom={5}>Cardápio</Heading>
                 <Stack>
                     <FlatList
-                        marginBottom={180}
+                        marginBottom={260}
                         keyExtractor={ (item, index) => item.id }
                         numColumns={2}
                         data={data.menus}

@@ -2,7 +2,8 @@ import { Box, Divider, Heading, Image, Pressable, Text } from "native-base";
 import { light_grey } from "../../theme/colors";
 import { Alert } from "react-native";
 
-export default function Product({ data }) {
+export default function Product({ data, classification }) {
+    // console.log(classification.name);
     return (
         <Pressable
             onLongPress={()=> Alert.alert('Error', "This function's still on development")}
@@ -14,9 +15,14 @@ export default function Product({ data }) {
             mb={5}
         >
             <Box w={200}>
+                {classification.name == "ENTRADAS" ? 
                 <Heading noOfLines={2} size={"sm"}>
                     {data.name} - SERVE {data.qtd} PESSOAS
+                </Heading> : 
+                <Heading noOfLines={2} size={"sm"}>
+                    {data.name}
                 </Heading>
+            }
                 <Text noOfLines={2} color={light_grey}>
                     {data.desc}
                 </Text>
