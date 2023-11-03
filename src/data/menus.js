@@ -1,4 +1,191 @@
 export const data = {
+  CHANCHO_STORE:[
+    {
+      name:'CERVEJA EL CHANCHO SESSION IPA',
+      desc:'São 500ml dessa cerveja encorpada criada em conjunto com a cervejaria Ekaüt usando três tipos de lúpulo: El Dorado, Citra e Amarillo.',
+      imgUrl:'https://m1nu-images.s3.sa-east-1.amazonaws.com/1660682137424.jpeg',
+      price:28
+    },
+    {
+      name:'BONÉ PRETO EL CHANCHO TRUCKER™️',
+      desc:'Boné maneiraço da nossa marca na cor preta',
+      imgUrl:'https://m1nu-images.s3.sa-east-1.amazonaws.com/1660682127336.jpeg',
+      price:50
+    },
+    {
+      name:'BONÉ BRANCO EL CHANCHO TRUCKER™️',
+      desc:'Boné maneiraço da nossa marca na cor branca',
+      imgUrl:'https://res.cloudinary.com/servit/image/upload/s--pUVL-yCK--/v1651190008/sample/cmh0qa6jcqoun5jlqf2n.jpg',
+      price:50
+    },
+  ],
+  SOBREMESAS:[
+    {
+      id:1,
+      name:'BASTÕES DE TAPIOCA COM DOCE DE LEITE.',
+      desc:'',
+      imgUrl:'https://m1nu-images.s3.sa-east-1.amazonaws.com/1660841789856.jpg',
+      price:17
+    }
+  ],
+   DRINKS_ALCOOLICOS: [
+    {
+      id: 1,
+      name: 'CAPIRINHA 2 LIMÕES',
+      desc: 'Limão taiti e siciliano com rapadura e cachaça',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1660677217930.jpg',
+      price: 24.9
+    },
+    {
+      id: 2,
+      name: 'STRAWBERRY POPPY',
+      desc: 'Vodka, morango, limão siciliano e hortelã.',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1660841267474.jpg',
+      price: 21.9
+    },
+    {
+      id: 3,
+      name: 'RED SUNSET',
+      desc: 'Gin, frutas vermelhas, limão siciliano e soda de limão.',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1660841861924.jpg',
+      price: 22.9
+    },
+    {
+      id: 4,
+      name: 'CHANCHO SOUR',
+      desc: 'Gin beefeater, calda cítrica de capim santo, clara do ovo, sumo de limão e leva a marca da casa no drink.',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1660682354511.JPG',
+      price: 26.9
+    },
+    {
+      id: 5,
+      name: 'CAIPIRINHA',
+      desc: 'Frutas da estação e cachaça.',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1660841223772.jpg',
+      price: 21.9
+    },
+    {
+      id: 6,
+      name: 'ROCKS TONIC',
+      desc: 'Gin bombay, tônica, chá de frutas vermelhas e spray de água de flor de laranjeira.',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1660677365171.jpg',
+      price: 27.9
+    },
+    {
+      id: 7,
+      name: 'CAIPIROSKA',
+      desc: 'Frutas da estação e vodka.',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1660841245124.jpg',
+      price: 23.9
+    },
+    {
+      id: 8,
+      name: 'WATERMELON ICE MOJITO',
+      desc: 'Rum, melancia, suco de limão, triple sec, soda de limão e hortelã.',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1660841321959.jpg',
+      price: 22.9
+    },
+    {
+      id: 9,
+      name: 'BANANA BUCK',
+      desc: 'Vodka, limão, cachaça bananinha, xarope de gengibre, e espuma de gengibre com rapadura.',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1660677187979.jpg',
+      price: 23.9
+    },
+  ],
+    COMBO_PROMOCIONAIS:[
+    {
+      id: 1,
+      name: 'COMBO CHEESEBACON',
+      desc: 'O Combo Mais Vendido por 5 anos consecutivos, o cheesebacon ganha o coração do cliente na primeira mordida. Feito com pão brioche, blend bovino 180g, creme de cheddar, bacon crocante e a nossa viciante mayo defumada. Pedindo esse combo você também leva a batata individual + refri lata.',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1663101224524.jpg',
+      price: 51.49
+    },
+    {
+      id: 2,
+      name: 'COMBO CLASSIC',
+      desc: 'O clássico que a galera mais pede é esse! A mistura de sensações desse burger é Viciante. Ele vai com pão brioche, blend bovino 180g, creme de cheddar, a melhor cebola caramelizada da cidade e a nossa viciante mayo defumada. E nesse combo você leva fritas individuais + refri lata!',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1675280768321.jpg',
+      price: 51.49
+    },
+    {
+      id: 3,
+      name: 'COMBO CUBANO',
+      desc: 'Originado nas comunidades cubanas da Flórida, esse sanduba tem uma mistura de sensações indescritíveis. Se liga só nos ingredientes: Pão ciabatta, copa lombo bem temperado e assado lentamente, fatias finas de presunto, queijo muçarela derretido e picles. E nesse combo você leva fritas individuais + refri lata!',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1686331531320.jpg',
+      price: 49.9
+    },
+    {
+      id: 4,
+      name: 'COMBO PULLED PORK',
+      desc: 'Esse é o carro-chefe da casa! Detentor do título de maior sanduiche do cardápio, ele acompanha: Pão baguete, 180g de copa lombo temperado assado lentamente, molho barbecue feito na casa. E pra ficar ainda melhor, o sanduba vai com uma salada de maionese defumada com repolho roxo, repolho verde e cenoura! Pedindo esse combo você também leva a batata individual + refri lata.',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1686331495680.jpg',
+      price: 44.9
+    },
+    {
+      id: 5,
+      name: 'COMBO BENEDITO',
+      desc: 'A combinação perfeita em um só sanduba: Pão brioche, blend bovino da casa, queijo muçarela maçaricado, bacon crocante, ovo gema dura e o molho mais viciante de todos: mayo alho e limão. Essa combinação vai fazer você viciar a cada mordida! Pode pedir sem medo! Pedindo esse combo você também leva a batata individual + refri lata.',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1675373388926.jpg',
+      price: 49.9
+    },
+    {
+      id: 6,
+      name: 'COMBO CHEESEBURGUER',
+      desc: 'Tá afim de pedir um combo sem erro? Então já achou a opção certa! O Cheeseburger vai pão brioche, blend bovino 180g, creme de cheddar extremamente cremoso e nossa viciante mayo defumada. E nesse combo você leva fritas individuais + refri lata!',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1675280704103.jpg',
+      price: 45.9
+    },
+    {
+      id: 7,
+      name: 'COMBO CHICANO',
+      desc: 'Apimentado na medida certa, esse burger tem uma combinação sensacional: Pão brioche, blend bovino da casa, creme de cheddar, pimenta jalapeño, rúcula fresquinha e mayo putamadre (nossa maionese picante). E nesse combo você leva fritas individuais + refri lata!',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1675280732136.jpg',
+      price: 49.9
+    },
+    {
+      id: 8,
+      name: 'COMBO CHILLI CHEESE',
+      desc: 'Esse combo é uma verdadeira mistura de sensações! Ele acompanha pão australiano com uma pegada levemente adocicada, Chancho´s chilli pork (carne suína temperada e desfiada, levemente picante), blend bovino 180g, creme de cheddar e molho ranch. E nesse combo você leva fritas individuais + refri lata!',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1686331512757.jpg',
+      price: 52.5
+    },
+    {
+      id: 9,
+      name: 'COMBO FALAFEL',
+      desc: 'O melhor burger vegetariano de Fortaleza! Essa belezinha vai com pão australiano, burger de falafel super temperado (base de grão de bico), salada fresquinha de alface, tomate e cebola roxa e o molho perfeito pra combinar com tudo isso: molho ranch. E nesse combo você leva fritas individuais + refri lata!',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1660850349991.jpg',
+      price: 44.9
+    },
+    {
+      id: 10,
+      name: 'COMBO RANCH',
+      desc: 'Esse combo vai te conquistar de primeira! Ele acompanha pão brioche, blend bovino 180g, queijo coalho maçaricado, bacon croncante, alface fresco e o molho mais pedido da casa: molho ranch! E nesse combo você leva fritas individuais + refri lata!',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1660850327299.jpg',
+      price: 52.5
+    },
+    {
+      id: 11,
+      name: 'COMBO P.O.R.K.E.R',
+      desc: 'Esse é o melhor combo suíno da cidade, perfeito para os amantes de carne de porco! Ele vai com pão brioche, blend suíno 150g, creme de cheddar, picles, cebola roxa e o molho mais viciante do Chancho: mayo alho e limão. E nesse combo você leva fritas individuais + refri lata!',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1663101173308.JPG',
+      price: 44.9
+    },
+    {
+      id: 12,
+      name: 'COMBO KENTUCKY',
+      desc: 'Sobrecoxa de frango frito Super Crocante, acompanhado de uma salada de maionese defumada extremamente viciante e pra finalizar essa combinação, fatias de picles. Se só vendo a foto e lendo a descrição já deu vontade. Pedindo esse combo você também leva a batata individual + refri lata.',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1675368212933.jpg',
+      price: 44.9
+    },
+    {
+      id: 13,
+      name: 'COMBO TUTANO',
+      desc: 'Tá afim de um burger diferentão? Então vem de Tutano! Ele vai pão brioche, blend da casa 180g, creme de queijo, tutano, picles e maionese defumada. Pedindo esse combo você também leva a batata individual + refri lata.',
+      imgUrl: 'https://m1nu-images.s3.sa-east-1.amazonaws.com/1686331477443.jpg',
+      price: 49.9
+    }
+  ],
     BEBIDAS:[
         {
             id: 1,
