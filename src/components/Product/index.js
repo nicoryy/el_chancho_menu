@@ -1,12 +1,19 @@
-import { Box, Divider, Heading, Image, Pressable, Text } from "native-base";
-import { light_grey } from "../../theme/colors";
+import { Actionsheet, Box, Button, Divider, Heading, Image, Pressable, Text, useDisclose } from "native-base";
+import { light_blue, light_grey } from "../../theme/colors";
 import { Alert } from "react-native";
 
 export default function Product({ data, classification }) {
     // console.log(classification.name);
+
+    const {
+        isOpen,
+        onOpen,
+        onClose
+      } = useDisclose();
+
     return (
         <Pressable
-            onLongPress={()=> Alert.alert('Error', "This function's still on development")}
+            onPress={onOpen}
             w={"100%"}
             h={100}
             flexDir={"row"}
@@ -14,6 +21,55 @@ export default function Product({ data, classification }) {
             p={5}
             mb={5}
         >
+
+            <Actionsheet isOpen={isOpen} onClose={onClose}>
+                <Actionsheet.Content>
+                    <Box
+                    width={'100%'}
+                    alignItems={'center'}
+                    gap={5}
+                    >
+                        <Image
+                        src={data.imgUrl}
+                        alt={data.name}
+                        w={'100%'}
+                        h={200}
+                        borderRadius={15}
+                        />
+                        
+                        <Heading>
+                            {data.name}
+                        </Heading>
+
+                        <Text
+                        pr={5}
+                        pl={5}
+                        >
+                            {data.desc}
+                        </Text>
+
+                        <Box
+                        w={'100%'}
+                        flexDir={'row'}
+                        justifyContent={'space-between'}
+                        alignItems={'center'}
+                        >
+                            <Heading>
+                                R$ {data.price}
+                            </Heading>
+
+                            <Button
+                            backgroundColor={light_blue}
+                            >
+                                Comandar
+                            </Button>
+                        </Box>
+                    </Box>
+                </Actionsheet.Content>
+            </Actionsheet>
+
+
+
             <Box w={200}>
                 {classification.name == "ENTRADAS" ? 
                 <Heading noOfLines={2} size={"sm"}>
