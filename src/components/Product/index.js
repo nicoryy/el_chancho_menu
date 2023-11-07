@@ -59,6 +59,9 @@ export default function Product({ data, classification }) {
                             </Heading>
 
                             <Button
+                            onPress={
+                                ()=> Alert.alert('Error', 'Function still under development...')
+                            }
                             backgroundColor={light_blue}
                             >
                                 Comandar

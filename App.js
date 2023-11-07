@@ -4,7 +4,7 @@ import { StatusBar } from 'react-native';
 import { NativeBaseProvider} from "native-base";
 
 import { LogBox } from 'react-native';
-LogBox.ignoreLogs(['Sending']);
+LogBox.ignoreLogs(['Sending', 'In']);
 
 export default function App() {
   return (
